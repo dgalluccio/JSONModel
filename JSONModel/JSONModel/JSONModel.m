@@ -383,11 +383,7 @@ static JSONKeyMapper* globalKeyMapper = nil;
                     return NO;
                 }
                     //    if (![value isEqual:[self valueForKey:property.name]])
-                  if (![value isEqual:[self valueForKey:property.name]])
-                      {
-                      JMLog(@"value: %@ is not equals %@ for property %@", value,[self valueForKey:property.name],property.name);
-                      }
-                
+                                  
                     [self setValue:value forKey: property.name];
                 
                 
